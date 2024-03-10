@@ -1,0 +1,38 @@
+@import "../../assets/style/colors";
+@import "../../assets/style/fonts";
+@import "../../assets/style/mixin";
+
+.footer {
+  background-color: $lightPurple80;
+  padding: 15px 20px;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: $lightPurple;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__limitsText {
+    color: $darkPurple;
+    font-weight: 700;
+  }
+  &__select {
+    cursor: pointer;
+    font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    outline: none;
+    position: relative;
+    background-image: url(../../assets/image/select-arrow-icon.svg);
+    background-position: center right 5px;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    padding-left: 10px;
+  }
+}

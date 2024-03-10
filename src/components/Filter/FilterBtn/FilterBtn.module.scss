@@ -1,0 +1,21 @@
+@import "../../../assets/style/colors";
+@import "../../../assets/style/fonts";
+@import "../../../assets/style/mixin";
+
+.applyBtn {
+  font-size: 18px;
+  font-weight: 700;
+  color: $green;
+  border: 1px solid $green;
+  border-radius: 8px;
+  padding: 7px 10px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+
+  &:disabled {
+    color: $darkBg;
+    border-color: $darkBg;
+  }
+}

@@ -1,0 +1,15 @@
+@import "../../../assets/style/colors";
+@import "../../../assets/style/fonts";
+@import "../../../assets/style/mixin";
+
+.totalCount {
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: $lightPurple;
+  }
+  &__number {
+    color: $darkPurple;
+  }
+}

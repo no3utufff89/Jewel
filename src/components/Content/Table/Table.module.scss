@@ -1,0 +1,31 @@
+@import "../../../assets/style/colors";
+@import "../../../assets/style/fonts";
+@import "../../../assets/style/mixin";
+
+.table {
+  background: $white;
+  border-radius: 8px;
+  border-collapse: collapse;
+  min-width: 600px;
+  width: 100%;
+
+  &__head {
+    background-color: $lightPurple80;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
+  }
+}
+.tableCell {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  &_name {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: $lightPurple;
+    text-align: left;
+    padding-left: 15px;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../assets/style/colors";
+@import "../../../assets/style/fonts";
+@import "../../../assets/style/mixin";
+.checkbox:checked + .label::before {
+  color: gray;
+  opacity: 1;
+}
+.label {
+  border: 1px solid $darkBg;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 7px 15px;
+  width: max-content;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: $darkBg;
+  position: relative;
+  flex-grow: 1;
+  column-gap: 5px;
+  align-items: center;
+  color: $darkPurple;
+
+  &:last-child {
+    flex-grow: 0;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    border: 1px solid red;
+    opacity: 0; /* Сначала скрываем кнопку. */
+    transition: opacity 0.3s; /* Устанавливаем плавное изменение непрозрачности. */
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../../assets/style/colors";
+@import "../../../assets/style/fonts";
+@import "../../../assets/style/mixin";
+
+.filterBlock {
+  padding: 15px 20px;
+  &__title {
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+}
